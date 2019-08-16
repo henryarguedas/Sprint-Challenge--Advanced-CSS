@@ -2,6 +2,27 @@
 
 .home {
 
+  .header-img {
+    @media @mobile {
+    //  border: 2px solid red;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+    }
+    .header-image {
+        @media @mobile {
+          width: 100%;
+          // border: 2px solid black;
+          padding: 0px;
+          
+        
+        }
+      }
+
+  }
+
+
+
   .intro {
 
     h2 {
@@ -11,24 +32,57 @@
     p {
       padding:0 15px;
     }
-  
-  }
+  // @media @mobile {
+  //   width: 
 
+  // }
+    
+  }
+  
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    .flexWrap();
     width: 100%;
+
+    
+      .visit-planets {
+        @media @mobile {
+
+        }
+      }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
-      height: 100%;
+      // height: 100%;
+      @media @mobile {
+        width: 100%;
+        // display: flex;
+        // justify-content: center;
+      }
+
     }
+
+    .sky {
+      @media @mobile {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @mobile {
+        display: none;
+      }
+    }
+
   }
 
+
+
   .visit-planets {
-    padding: 15px;
+    padding: 10px;
 
     h3 {
       margin-top: 11px;
@@ -46,8 +100,19 @@
     display: flex;
     justify-content: center;
 
+      @media @mobile {
+        flex-direction: column-reverse;
+        padding: 10px 10px;
+        width: 100%;
+
+      }
+
     .walk-text {
       width: 50%;
+      
+        @media @mobile {
+          width: 100%;
+        }
 
       h3 {
         margin-bottom: 10px;
@@ -57,13 +122,17 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+        @media @mobile {
+          width:100%;
+          margin-left: 0%;
+        }
       
       img {
         width: 100%;
@@ -71,5 +140,36 @@
         border-radius: 10px;
       }
     }
+
+.btn {
+.btn-mixin(5px, #23293B, white, 1rem); 
+
+  @media @mobile {
+    width: 100%;
   }
-}// home
+
+}
+
+  }
+
+}
+
+
+
+
+
+
+//  .btn {
+//         border-radius: 5px;
+//         background: #23293B;
+//         color: white;
+//         padding: 1rem;
+        
+
+//         &:hover {
+//           background: lighten(#23293B, 50%);
+//           cursor: pointer;
+//         }
+//       }
+
+ 
