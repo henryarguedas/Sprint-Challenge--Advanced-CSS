@@ -1,1 +1,23 @@
-// Mixins Here
+// // Mixins Here.btn {
+//         border-radius: 5px;
+//         background: #23293B;
+//         color: white;
+//         padding: 1rem;
+
+//         &:hover {
+//           background: lighten(#23293B, 50%);
+//           cursor: pointer;
+//         }
+//       }
+
+.btn-mixin(@b-radius, @background, @text-color, @padding) {
+    border-radius: @b-radius;
+    background: @background;
+    color: @text-color;
+    padding: @padding;
+
+        &:hover {
+            background: lighten(#232938, 50%);
+            cursor: pointer;
+        }
+}

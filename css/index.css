@@ -168,6 +168,8 @@ img {
   flex-direction: column;
   align-items: center;
   margin: 1.5rem;
+  background: #F4F4F4;
+  width: 100%;
 }
 .nav-bar h1 {
   font-size: 3rem;
@@ -243,13 +245,13 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-.btn {
+.home .walk .btn {
   border-radius: 5px;
   background: #23293B;
   color: white;
   padding: 1rem;
 }
-.btn:hover {
-  background: #9aa4c3;
+.home .walk .btn:hover {
+  background: #9aa5c0;
   cursor: pointer;
 }
